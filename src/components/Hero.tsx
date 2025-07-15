@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
 
           {/* Right: Terminal */}
           <motion.div
-            className="md:w-1/2 flex justify-center"
+            className="md:w-1/2 flex justify-center mt-10"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
