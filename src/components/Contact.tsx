@@ -76,6 +76,7 @@ const Contact: React.FC = () => {
         toast.error(result.error || "Failed to send message.");
       }
     } catch (error) {
+      console.error(error, "Error while sending message");
       setFormStatus({ type: "error", message: "Failed to send message." });
       toast.error("Failed to send message.");
     } finally {
