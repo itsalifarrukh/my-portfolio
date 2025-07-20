@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MERN Stack Developer Portfolio",
@@ -15,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased font-sans bg-gradient-to-b from-slate-900 to-slate-800 text-foreground">
-      <Toaster position="top-right" />
+        <Toaster position="top-right" />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
